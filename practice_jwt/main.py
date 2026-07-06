@@ -13,4 +13,10 @@ def login(data:Login):
     "password":data.password
   }
 
-
+@app.post("/register")
+def register(data.Register):
+  return {
+    "name":data.name,
+    "email":data.email,
+    "password":data.password
+  }
